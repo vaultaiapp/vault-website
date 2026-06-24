@@ -3,50 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Vault AI</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vault - Gizlilik Politikası ve Kullanım Koşulları</title>
+    <meta name="description" content="Vault uygulaması gizlilik politikası ve yasal şartlar. Kişisel verilerinizin nasıl korunduğunu öğrenin.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">
-            <img src="logo.png" alt="Vault Logo">
-            Vault
-        </a>
-        <div class="nav-links">
-            <a href="index.html">Anasayfa</a>
-            <a href="privacy.html" class="active">Gizlilik Politikası</a>
-            <a href="support.html">Destek</a>
+    <!-- Background Gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <img src="icons/icon-128.webp" alt="Vault Logo" class="logo-img">
+                <span>Vault</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#features">Özellikler</a>
+                <a href="index.html#ai-insights">Yapay Zeka</a>
+                <a href="index.html#support">Destek</a>
+                <a href="privacy.html" class="nav-secondary active">Gizlilik Politikası</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="index.html#download" class="btn-nav">Hemen İndir</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <main>
-        <div class="content-box">
-            <h1>Gizlilik Politikası</h1>
-            <p><strong>Son Güncelleme:</strong> 15 Haziran 2026</p>
-        
-        <h2>1. Toplanan Veriler ve Saklama Koşulları</h2>
-        <p>Vault AI, kişisel finans ve bütçe yönetimi aracınızdır. Uygulama "Anonim" modda kullanıldığında girdiğiniz tüm veriler (gelirler, giderler, abonelikler, hedefler) tamamen ve sadece kendi <strong>cihazınızın yerel hafızasında</strong> şifrelenmiş olarak saklanır. Bizim veya üçüncü şahısların bu verilere erişimi yoktur. Bulut senkronizasyonu için üye olmanız durumunda verileriniz uçtan uca şifreli veritabanı sunucularımızda güvenle saklanır.</p>
+    <!-- Privacy Content Section -->
+    <section class="privacy-section">
+        <div class="container container-narrow">
+            <div class="privacy-card">
+                <h1>Gizlilik Politikası ve Kullanım Şartları</h1>
+                <p class="last-updated">Son Güncelleme: 24 Haziran 2026</p>
+                
+                <hr class="divider">
 
-        <h2>2. Yapay Zeka (AI) Asistan Kullanımı</h2>
-        <p>Uygulama içerisindeki finansal yapay zeka asistanını kullandığınızda, asistanın size doğru yorum ve analizler sunabilmesi için yalnızca "içinde bulunduğunuz güncel döneme ait" gelir/gider rakamları anlık ve geçici bir süreyle işlenir. Kişisel tanımlayıcı bilgileriniz (ad, e-posta vb.) <strong>asla</strong> yapay zeka modellerine gönderilmez ve verileriniz üçüncü parti yapay zeka firmaları tarafından dil modellerini eğitmek amacıyla <strong>kullanılamaz</strong>.</p>
+                <div class="policy-block">
+                    <h2>1. Giriş ve Genel Bakış</h2>
+                    <p>
+                        Vault (bundan böyle "Uygulama" veya "Hizmet" olarak anılacaktır), kişisel finansınızı yönetmeniz, bütçe takibi yapmanız ve finansal hedeflerinize ulaşmanız için geliştirilmiş bir yazılımdır. Gizliliğinize büyük önem veriyoruz. Bu politika, Uygulama üzerinden hangi verilerin toplandığını, nasıl kullanıldığını, verilerinizin güvenliğini nasıl sağladığımızı ve geliştirici olarak sahip olduğumuz sorumluluk sınırlarını düzenlemektedir.
+                    </p>
+                </div>
 
-        <h2>3. Üçüncü Taraf Servisler ve Ödemeler</h2>
-        <p>Uygulama içi satın alımlarınız (Premium üyelikler) doğrudan Apple'ın resmi sistemleri üzerinden işlenmektedir. Kredi kartı veya detaylı fatura bilgileriniz hiçbir şekilde bizim sunucularımızdan geçmez ve tarafımızca saklanmaz.</p>
+                <div class="policy-block">
+                    <h2>2. Toplanan Veriler ve Amacı</h2>
+                    <p>
+                        Vault'u kullanırken aşağıdaki veriler toplanabilir ve işlenebilir:
+                    </p>
+                    <ul>
+                        <li><strong>Hesap Bilgileri:</strong> Google veya Apple ile giriş yaparken kullandığınız e-posta adresi ve ad-soyad bilgileriniz. Bu bilgiler hesabınızı doğrulamak ve verilerinizi cihazlar arası senkronize etmek için kullanılır.</li>
+                        <li><strong>Finansal Bilgiler:</strong> Kendi isteğinizle girdiğiniz aylık net gelir, gider kategorileri (kira, market, fatura vb.), oluşturduğunuz birikim hedefleri ve tasarruf miktarları. Bu bilgiler yalnızca size özel bütçe grafiklerini oluşturmak ve yapay zeka tasarruf öngörülerini sunmak için işlenir.</li>
+                        <li><strong>Kullanım Bilgileri:</strong> Uygulama içindeki tıklama sıklığı, tercih edilen para birimi ve tema ayarları gibi teknik veriler. Bu veriler kullanıcı deneyimini iyileştirmek amacıyla kullanılır.</li>
+                    </ul>
+                </div>
 
-        <h2>4. Veri Silme ve Kullanıcı Hakları</h2>
-        <p>Kullanıcılar, uygulamanın 'Ayarlar' sekmesinden diledikleri zaman tüm verilerini cihazdan ve (eğer kayıtlıysalar) sunuculardan kalıcı olarak silebilirler. Silinen veriler hiçbir şekilde geri getirilemez.</p>
+                <div class="policy-block">
+                    <h2>3. Verilerin Depolanması ve Güvenliği</h2>
+                    <p>
+                        Finansal verileriniz bizim için son derece hassastır. Vault, verilerinizin depolanması ve senkronize edilmesi amacıyla güvenli ve şifreli veri tabanı altyapısı sağlayan <strong>Supabase</strong> hizmetini kullanır. Verileriniz, aktarım sırasında (SSL/TLS şifrelemesi) ve sunucularda yüksek güvenlik standartlarında depolanmaktadır. Cihazınızda saklanan veriler ise ilgili işletim sisteminin (iOS/Android) sunduğu yerel güvenlik protokolleri ile korunur.
+                    </p>
+                </div>
 
-            <h2>5. İletişim</h2>
-            <p>Gizlilik politikamızla, verilerinizle veya uygulamayla ilgili tüm soru ve destek talepleriniz için bize her zaman <strong>vaultaiapp.support@gmail.com</strong> adresi üzerinden ulaşabilirsiniz.</p>
+                <div class="policy-block">
+                    <h2>4. Veri Paylaşımı ve Üçüncü Şahıslar</h2>
+                    <p>
+                        Vault, kullanıcıların finansal ve kişisel verilerini <strong>kesinlikle satmaz, kiralamaz veya herhangi bir pazarlama ortağıyla paylaşmaz.</strong> Verileriniz yalnızca hizmetin çalışabilmesi için kullanılan güvenli altyapı sağlayıcıları (Supabase, Apple, Google) ile teknik zorunluluklar çerçevesinde paylaşılır.
+                    </p>
+                </div>
+
+                <div class="policy-block warning-block">
+                    <h2>5. Sorumluluk Reddi ve Geliştirici Haklarının Korunması (Önemli)</h2>
+                    <p>
+                        <strong>Lütfen Dikkatle Okuyunuz:</strong>
+                    </p>
+                    <p>
+                        Vault uygulaması, kullanıcıların finansal durumlarını takip etmelerine yardımcı olmak amacıyla geliştirilmiş yardımcı bir yazılımdır. Uygulama içinde sunulan yapay zeka (AI) öngörüleri, tasarruf hesaplamaları, zaman tahminleri ve analizler <strong>kesinlikle bir yatırım tavsiyesi, profesyonel finansal danışmanlık veya resmi mali planlama niteliği taşımamaktadır.</strong>
+                    </p>
+                    <p>
+                        Uygulama içerisindeki veriler, tahminler veya yapay zeka asistanı tarafından verilen yanıtlar doğrultusunda kullanıcının yapacağı yatırımlardan, harcamalardan, borçlanmalardan ya da alacağı finansal kararlardan kaynaklanan <strong>hiçbir maddi zarar, kar kaybı, borçlanma veya olumsuz finansal sonuçtan geliştirici (veya geliştirici ekibi) yasal olarak sorumlu tutulamaz.</strong> Kullanıcı, tüm finansal eylemlerini kendi özgür iradesi ve sorumluluğuyla gerçekleştirdiğini ve yazılımın hesaplama hatalarını barındırabileceğini kabul eder.
+                    </p>
+                </div>
+
+                <div class="policy-block">
+                    <h2>6. Çerezler ve Yerel Depolama (Local Storage)</h2>
+                    <p>
+                        Vault, tarayıcınızda veya mobil cihazınızda dil tercihiniz, tema seçiminiz (koyu/açık mod) ve aktif oturum bilgileriniz gibi ayarları hatırlamak amacıyla yerel depolama birimini (localStorage/cookies) kullanabilir.
+                    </p>
+                </div>
+
+                <div class="policy-block">
+                    <h2>7. Kullanıcı Hakları</h2>
+                    <p>
+                        Dilediğiniz zaman Uygulama içindeki "Ayarlar" sayfasından veya destek ekibimizle iletişime geçerek hesabınızın ve tüm finansal verilerinizin veri tabanımızdan <strong>kalıcı olarak silinmesini talep etme hakkına sahipsiniz.</strong> Talebiniz ardından tüm kayıtlarınız sistemlerimizden geri alınamayacak şekilde temizlenir.
+                    </p>
+                </div>
+
+                <div class="policy-block">
+                    <h2>8. İletişim</h2>
+                    <p>
+                        Bu politika, gizlilik haklarınız veya uygulamanın kullanımı hakkında her türlü soru, öneri ve talepleriniz için destek ekibimize ulaşabilirsiniz:
+                    </p>
+                    <p class="contact-email">
+                        <strong>Destek E-posta:</strong> <a href="mailto:vaultaiapp.support@gmail.com">vaultaiapp.support@gmail.com</a>
+                    </p>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <p style="font-size: 14px;">&copy; 2026 Vault AI. Tüm hakları saklıdır.</p>
-        <div class="footer-links">
-            <a href="privacy.html">Gizlilik Politikası</a>
-            <a href="terms.html">Kullanım Koşulları (EULA)</a>
-            <a href="support.html">Destek</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="icons/icon-128.webp" alt="Vault Logo" class="logo-img">
+                        <span>Vault</span>
+                    </div>
+                    <p>Mali durumunuzu yapay zekanın gücüyle iyileştirin.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasyon</h4>
+                    <a href="index.html#features">Özellikler</a>
+                    <a href="index.html#ai-insights">Yapay Zeka</a>
+                    <a href="index.html#support">Destek</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Yasal</h4>
+                    <a href="privacy.html">Gizlilik Politikası</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vault. Tüm hakları saklıdır. vaultaiapp.support@gmail.com</p>
+            </div>
         </div>
     </footer>
 </body>
